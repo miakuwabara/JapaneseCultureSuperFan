@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/images/large flower.png" />
+    <title>SushiSuperFan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="row dark-grey belt">
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="box center-content">
+       <img id="orangeSushi1" src="images/orange plate.png" class="shadowplates"/>
+      </div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="box center-content">
+        <img id="redSushi1" src="images/red plate.png" class="shadowplates"/>
+      </div>
+      <div class="gap"></div>
+      <div class="box center-content">
+        <img id="orangeSushi2" src="images/orange plate.png" class="shadowplates"/>
+      </div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+
+    <div class="row dark-grey belt">
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="box center-content">
+        <img id="blueSushi1" src="images/blue plate.png" class="shadowplates"/>
+      </div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+
+    <div class="row dark-grey belt">
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="box"></div>
+      <div class="box center-content">
+        <img id="redSushi2" src="images/red plate.png" class="shadowplates"/>
+      </div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+
+    <div class="table back">
+      <div class="row3"></div>
+
+      <div class="row2">
+        <div class="group1">
+          <div class="gap2"></div>
+          <div class="box2 center-content">
+            <img src="images/orange plate.png"/>
+          </div>
+          <div class="gap2"></div>
+          <div class="box2 center-content">
+            <img 
+              src="images/red plate.png" 
+              class="shadowplate"
+              onclick="moveFoodback()">
+          </div>
+        </div>
+        <div class="group2">
+          <div class="gap2"></div>
+          <div class="box2 center-content">
+            <img src="images/blue plate.png"/>
+          </div>
+          <div class="gap2"></div>
+          <div class="box2 center-content">
+            <img src="images/orange plate.png"/>
+          </div>
+        </div>
+          <img
+            src="images/large flower.png"
+            id="flower-img1"
+            class="flower1 flowerux"
+            onclick="disappear1()"
+          />
+        </div>
+          <img
+            src="images/large flower.png"
+            id="flower-img2"
+            class="flower2 flowerux"
+            onclick="disappear2()"
+          />
+        </div>
+          <img
+            src="images/large flower.png"
+            id="flower-img3"
+            class="flower3 flowerux"
+            onclick="disappear3()"
+          />
+        </div>
+          <img
+            src="images/button.png"
+            id="flower-img4"
+            class="flower4 flowerux"
+            onclick="moveFood()"
+          />
+        </div>
+        <img src="images/left_tree.png" class="side-tree right-tree shadowTree"/>
+        <img src="images/right_tree.png" class="side-tree left-tree shadowTree" />
+      </div>
+      <div
+        class="startbutton"
+        id="bunnybutton"
+        onclick="moveGif()"
+      ></div>
+    </div>
+    <audio id="my-click" src="Audio/Bitesoundeffect.mp3"></audio>
+    <audio id="my-flowerclick" src="Audio/Bloopsoundeffect.mp4"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

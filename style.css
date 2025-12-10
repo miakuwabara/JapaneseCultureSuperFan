@@ -1,0 +1,306 @@
+/* https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html#:~:text=Open%20Google%20Fonts%20and%20follow,(in%20HTML%20or%20CSS) */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+/* rulesets that affect specific HTML element tags */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.disappear {
+  display: none;
+}
+
+/* rulesets that affect only elements using 'class=' */
+
+.box {
+  height: 100%;
+  width: 10%;
+}
+.box2 {
+  height: 100%;
+  width: 20%;
+}
+.gap {
+  height: 100%;
+  width: 10%;
+}
+.gap2 {
+  height: 100%;
+  width: 20%;
+}
+.row {
+  height: calc(100% / 6);
+  width: 100%;
+  display: flex;
+}
+.belt {
+  background-image: url("images/belt.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 100%;
+}
+.table {
+  background-image: url("images/table.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 100%;
+  height: 50%;
+  width: 100%;
+}
+.row2 {
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+}
+.row3 {
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+}
+.group1 {
+  height; 100%;
+  width: 100%;
+  display:flex;
+
+}
+.group2 {
+  height; 100%;
+  width: 100%;
+  display:flex;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.translucent {
+  opacity: 0.5;
+}
+
+
+.gone {
+  display: none;
+}
+.custom-font {
+  font-family: "Zen Dots", cursive;
+}
+/* colors */
+.green {
+  background-color: #3c851f;
+}
+.limegreen {
+  background-color: #4fda19;
+}
+.blue {
+  background-color: #083492;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #ac2e32;
+}
+.pink {
+  background-color: #ff5ea9;
+}
+.orange {
+  background-color: #f57f11;
+}
+.black {
+  background-color: #000000;
+}
+.back {
+  background-color:#dddddd;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #707070;
+}
+.yellow {
+  background-color: #eee12e;
+}
+.floating-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* set the area the images float inside */
+  overflow: visible;
+}
+
+.flower1 {
+  position: absolute;
+  width: 120px;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+  top: 50%;
+  right: 20%;
+}
+.flower2 {
+  position: absolute;
+  width: 120px;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+  top: 30%;
+  right: 60%;
+}
+.flower3 {
+  position: absolute;
+  width: 120px;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+  top: 10%;
+  left: 65%;
+}
+.flower4 {
+  position: absolute;
+  width: 120px;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+  top: 80%;
+  right: 75%;
+}
+.left-tree {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.right-tree {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.side-tree {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  z-index: 1000;   /* makes sure it's on top */
+  animation: float 4s ease-in-out infinite;
+}
+.button-div {
+  height: 100%;
+  width: calc(100% / 3);
+  display: flex;
+}
+
+.flowerux {
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  color:hsl(300, 9%, 98%);
+}
+.flowerux:hover {
+  cursor: pointer;
+  color:hsl(337, 100%, 76%);
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.10)
+  
+}
+.flowerux:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+.shadowplate {
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  color:hsl(0, 72%, 31%);
+}
+.shadowplate:hover {
+  cursor: pointer;
+  color:hsl(0, 83%, 50%);
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.30)
+  
+}
+.shadowplates {
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  color:hsl(0, 0%, 29%);
+}
+.shadowTree {
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  color:hsl(0, 0%, 27%);
+}
+.shadowplate:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+.move-forward {
+  transform: translate(1500px, 0);
+  transition: transform 8s;
+}
+.move-backward {
+  transform: translate(0px, 0);
+  transition: transform 5s;
+}
+@media only screen and (max-width: 1400px) {
+  .belt {
+    background-size: auto 100%;
+  }
+}
+@media only screen and (max-width: 1270px) {
+  .table {
+    background-size: auto 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    height: 100%;
+    width: 10%;
+  }
+  .row {
+    height: calc(100% / 6);
+    width: 100%;
+    display: flex;
+  }
+  .row2 {
+    height: 30%;
+    width: 100%;
+    display: block;
+  }
+  .row3 {
+    height: 20%;
+    width: 100%;
+    display: flex;
+  }
+  .disappear {
+    display: none;
+  }
+  .group1 {
+    height: 70%;
+    width: 100%;
+    display:flex;
+  }
+  .group2 {
+    height: 60%;
+    width: 100%;
+    display:flex;
+  }
+  .gap {
+    height: 100%;
+    width: 5%;
+  }
+  .box {
+    height: 100%;
+    width: 21%;
+  }
+ 
+  .table {
+    background-image: url("images/halftable.png");
+    background-size: 100% 100%;
+  }
+  .left-tree {
+   display: none; 
+  }
+  .right-tree {
+  display: none; 
+  }
+  .gap2 {
+    height: 100%;
+    width: 25%;
+  }
+}
